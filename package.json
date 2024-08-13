@@ -39,6 +39,7 @@
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api SafeAreaPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
+    "prepare": "npm run build",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
